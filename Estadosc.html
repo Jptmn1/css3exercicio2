@@ -1,0 +1,573 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht=device-width, initial scale=1.0">
+<meta name="author" content="João">
+<title>Estados de brasil e seus dados</title>
+<style>
+    header{text-align: center;
+    background-color: antiquewhite;}
+.iac{width: 250px;
+    height: 150px;
+}
+.ac{border-style: solid; 
+float: left;
+width: 250px;
+height: 300px;
+background-color: cadetblue;}
+
+
+.iap{width: 250px;height: 150px;}
+.ap{width: 250px;
+height: 300px;
+float: left;
+border-style: groove;
+margin-left: 3cm;
+background-color: antiquewhite;}
+li{padding-left: 35px;}
+ul{padding-left: 75px;}
+
+.iam{width: 250px;height: 150px;}
+.am{float: right;
+width: 250px;
+height: 300px;
+border-style: double;
+border-color: crimson;
+background-color: darkgray;
+}
+
+.ipa{width: 250px;height: 150px;}
+.pa{float: right;
+width: 250px;
+height: 300px;
+margin-right: 3cm;
+border-style: ridge;
+border-color: blueviolet;
+background-color: lightslategrey;
+}
+
+.iro{width: 250px;height: 150px;}
+.ro{float: left;
+width: 250px;
+height: 300px;
+margin-top: 2cm;
+border-style: dashed;
+background-color: beige;
+border-color: black;
+}
+
+.irr{width: 250px;height: 150px;}
+.rr{width: 250px;
+height: 300px;
+float: left;
+border-style: groove;
+margin-left: 3cm;
+margin-top: 2cm;
+background-color: chocolate;}
+
+.ito{width: 250px;height: 150px;}
+.to{float: right;
+width: 250px;
+height: 300px;
+border-style: dashed;
+margin-top: 2cm;
+border-color: blueviolet;
+background-color: darkslategrey;}
+
+.ima{width: 250px;height: 150px}
+.ma{float: right;
+width: 250px;
+height: 300px;
+margin-right: 3cm;
+margin-top: 2cm;
+border-style: inset;
+background-color: mediumpurple;}
+
+.ipi{width: 250px;height: 150px}
+.pi{float: left;
+width: 250px;
+height: 300px;
+margin-top: 2cm;
+background-color: brown;
+border-style: solid;
+background-color: darkgreen;}
+
+.ice{width: 250px;height: 150px}
+.ce{width: 250px;
+height: 300px;
+float: left;
+border-style: ridge;
+margin-left: 3cm;
+margin-top: 2cm;
+background-color: lightsalmon;}
+
+.irn{width: 250px;height: 150px}
+.rn{float: right;
+width: 250px;
+height: 300px;
+border-style: dashed;
+margin-top: 2cm;
+background-color: cornsilk;}
+
+.ipb{width: 250px;height: 150px}
+.pb{float: right;
+width: 250px;
+height: 300px;
+margin-right: 3cm;
+margin-top: 2cm;
+border-style: dotted;
+border-color: cadetblue;
+background-color: darkcyan;}
+
+.ipe{width: 250px;height: 150px}
+.pe{float: left;
+width: 250px;
+height: 300px;
+margin-top: 2cm;
+border-style: solid;
+border-color: blue;
+background-color: brown;}
+
+.ial{width: 250px;height: 150px}
+.al{width: 250px;
+height: 300px;
+margin-top: 2cm;
+float: left;margin-left: 3cm;
+background-color: paleturquoise;
+border-style: solid;
+}
+
+
+.ise{width: 250px;height: 150px}
+.se{width: 250px;
+height: 300px;
+margin-top: 2cm;
+float: right;
+background-color: mintcream;
+border-style: double;
+}
+
+
+.ibh{width: 250px;height: 150px}
+.bh{width: 250px;
+height: 300px;
+margin-top: 2cm;
+float: right;margin-right: 3cm;
+background-color: maroon;
+border-style: dashed;
+}
+
+
+
+
+
+.idf{width: 250px;height: 150px}
+.df{width: 250px;
+height: 300px;
+margin-top: 2cm;
+float: left;
+background-color: indianred;
+border-style: solid;
+}
+
+
+.ies{width: 250px;height: 150px}
+.es{width: 250px;
+height: 300px;
+margin-top: 2cm;
+float: right;
+background-color: turquoise;
+border-style: groove;
+}
+
+.img{width: 250px;height: 150px}
+.mg{width: 250px;
+height: 300px;
+margin-top: 2cm;
+float: right;
+background-color: rosybrown;
+border-style: dotted;
+margin-right: 3cm;
+}
+
+
+.irj{width: 250px;height: 150px}
+.rj{width: 250px;
+height: 300px;
+margin-top: 2cm;
+float: left;
+background-color: mediumslateblue;
+border-style: initial;
+}
+
+
+.isp{width: 250px;height: 150px}
+.sp{width: 250px;
+height: 300px;
+margin-top: 2cm;
+float: left;margin-left: 3cm;
+background-color: blueviolet;
+border-style: outset;
+}
+
+
+.isc{width: 250px;height: 150px}
+.sc{width: 250px;
+height: 300px;
+margin-top: 2cm;
+float: right;
+background-color: cadetblue;
+border-style: ridge;
+}
+
+
+.ipr{width: 250px;height: 150px}
+.pr{width: 250px;
+height: 300px;
+margin-top: 2cm;
+float: right;
+background-color: thistle;
+border-style: dashed;
+margin-right: 3cm;
+}
+
+
+.irs{width: 250px;height: 150px}
+.rs{width: 250px;
+height: 300px;
+margin-top: 2cm;
+float: left;
+background-color: tomato;
+border-style: groove;
+}
+
+.igo{width: 250px;height: 150px}
+.go{width: 250px;
+height: 300px;
+margin-top: 2cm;
+float: left;margin-left: 3cm;
+background-color: darkorange;
+border-style: double;
+}
+
+
+.imt{width: 250px;height: 150px}
+.mt{width: 250px;
+height: 300px;
+margin-top: 2cm;
+float: right;margin-right: 9.8cm;
+background-color: beige;
+border-style: dotted;
+}
+
+.ims{width: 250px;height: 150px}
+.ms{width: 250px;
+height: 300px;
+margin-top: 2cm;
+float: left; margin-left: 3cm;
+border-style: dashed;
+background-color: blanchedalmond;
+}
+
+
+body{display: inline;}
+
+</style>
+</head>
+<body>
+<header><h1>O brasil e seus 26 estados além do distrito federal.</h1></header>
+
+<div class="ac">
+<section>
+    <img class="iac" src="https://www.visiteobrasil.com.br/galerias/gal-rio-branco/503-035919-rio-branco-vista-do-centro-de-rio-branco-foto-carloshenriquemoura-secom-licenca-cc-by-4-0gr.jpg">
+    <ul><h3>Acre(AC)</h3></ul>
+    <li>População: 869.265 hab.</li>
+    <li>Capital: Rio Branco</li>
+    <li>Clima: Equatorial</li>
+</section>
+</div>
+
+<div class="ap">
+<section>
+<img class="iap" src="https://todosdestinos.com/wp-content/uploads/2018/06/macapa.jpeg">
+<ul><h3>Amapá(AP)</h3></ul>
+<li>População: 829.494 hab</li>
+<li>Capital: Macapá</li>
+<li>Clima: Equatorial</li>
+</section>
+</div>
+
+<div class="am">
+<section>
+<img class="iam" src="https://turismoseguro.org/wp-content/uploads/2019/10/Manaus-I-2.jpg">
+<ul><h3>Amazonas(AM)</h3></ul>
+<li>População: 4.080.611 hab</li>
+<li>Capital: Manaus</li>
+<li>Clima: Equatorial</li>
+
+</section>
+</div>
+
+<div class="pa">
+    <section>
+<img class="ipa" src="https://cdn.panrotas.com.br/portal-panrotas-statics/media-files-original/2015/12/15/salvador141215.jpg">
+<ul><h3>Pará(PA)</h3></ul>
+<li>População: 8.513.497 hab</li>
+<li>Capital: Belém</li>
+<li>Clima: Equatorial</li>
+
+    </section>
+</div>
+
+<div class="ro">
+<section>
+<img class="iro" src="https://www.guiadoturismobrasil.com/up/img/1436846146.jpg">
+<ul><h3>Rondônia(RO)</h3></ul>
+<li>População: 1.787.279 hab</li>
+<li>Capital: Porto Velho</li>
+<li>Clima: Equatorial</li>
+
+</section>
+</div>
+
+<div class="rr">
+<section>
+<img class="irr" src="https://boavista.rr.gov.br/storage/Noticias/2021/JUNHO/JULHO/Bv131anosTurismo/turismo12.jpg">
+<ul><h3>Roraima(RR)</h3></ul>
+<li>População: 576.568 hab</li>
+<li>Capital: Boa Vista</li>
+<li>Clima: Equatorial</li>
+
+</section>
+</div>
+
+<div class="to">
+    <section>
+    <img class="ito" src="https://www.turismoecia.net/wp-content/uploads/2020/01/01-Flavio-andre_Praia_Rio_Tocantins_Orla_Palmas_TO-MTur.jpg">
+    <ul><h3>Tocantins(TO)</h3></ul>
+    <li>População: 1.555.229 hab</li>
+    <li>Capital: Palmas</li>
+    <li>Clima: Tropical seco</li>
+    
+    </section>
+    </div>
+
+    <div class="ma">
+        <section>
+        <img class="ima" src="https://portalguara.com/wp-content/uploads/2021/09/turismo-sao-luis-maranhao-1.jpg">
+        <ul><h3>Maranhão(MA)</h3></ul>
+        <li>População: 7.035.055 hab</li>
+        <li>Capital: São Luís</li>
+        <li>Clima: Tropical</li>
+        
+        </section>
+   </div>
+    
+   <div class="pi">
+            <section>
+            <img class="ipi" src="https://i0.wp.com/www.mundolusiada.com.br/wp-content/uploads/2019/12/CidadeTeresinaPiaui.jpg?fit=900%2C597&ssl=1">
+            <ul><h3>Piauí(PI)</h3></ul>
+            <li>População: 3.264.531 hab</li>
+            <li>Capital: Teresina.</li>
+            <li>Clima: Tropical</li>
+            
+            </section>
+  </div>
+   <div class="ce">
+                <section>
+                <img class="ice" src="https://rotadeferias.com.br/wp-content/uploads/2019/04/11-10.jpg">
+                <ul><h3>Ceará(CE)</h3></ul>
+                <li>População: 9.075.649 hab</li>
+                <li>Capital: Fortaleza</li>
+                <li>Clima:Semiárido</li>
+                
+                </section>
+   </div>
+   <div class="rn">
+                    <section>
+                    <img class="irn" src="https://rotadeferias.com.br/wp-content/uploads/2019/04/40-7.jpg">
+                    <ul><h3>Rio Grande do Norte(RN)</h3></ul>
+                    <li>População: 3.479.010 hab</li>
+                    <li>Capital: Natal</li>
+                    <li>Clima:Semiárido</li>
+                    
+                    </section>
+    </div>
+   <div class="pb">
+                        <section>
+                        <img class="ipb" src="https://rotadeferias.com.br/wp-content/uploads/2019/04/29-9.jpg">
+                        <ul><h3>Paraíba(PB)</h3></ul>
+                        <li>População: 3.996.496 hab</li>
+                        <li>Capital: João Pessoa</li>
+                        <li>Clima:Tropical</li>
+                        
+                        </section>
+    </div>
+   <div class="pe">
+                            <section>
+                            <img class="ipe" src="https://rotadeferias.com.br/wp-content/uploads/2019/04/33-8.jpg">
+                            <ul><h3>Pernanbuco(PE)</h3></ul>
+                            <li>População: 9.496.294 hab</li>
+                            <li>Capital: Recife.</li>
+                            <li>Clima:Tropical</li>
+                            
+                            </section>
+   </div>
+                        
+   <div class="al">
+                                <section>
+                                <img class="ial" src="https://rotadeferias.com.br/wp-content/uploads/2019/04/4-10.jpg">
+                                <ul><h3>Alagoas(AL)</h3></ul>
+                                <li>População: 3.322.820 hab</li>
+                                <li>Capital: Maceió</li>
+                                <li>Clima: Semiárido</li>
+                                
+                                </section>
+   </div>
+                            
+ <div class="se">
+<section>
+ <img class="ise" src="https://rotadeferias.com.br/wp-content/uploads/2019/04/52-2.jpg">
+ <ul><h3>Sergipe(SE)</h3></ul>
+ <li>População: 2.278.308 hab</li>
+ <li>Capital: Aracaju</li>
+<li>Clima: Tropical</li>
+                                    
+ </section>
+</div>
+                                
+<div class="bh">
+    <section>
+     <img class="ibh" src="https://rotadeferias.com.br/wp-content/uploads/2019/04/10-9.jpg">
+     <ul><h3>Bahia(BH)</h3></ul>
+     <li>População: População: 14.812.617 hab</li>
+     <li>Capital: Salvador</li>
+    <li>Clima: Tropical</li>
+                                        
+     </section>
+    </div>
+
+        <div class="df">
+            <section>
+             <img class="idf" src="https://rotadeferias.com.br/wp-content/uploads/2019/04/13-10.jpg">
+             <ul><h3>Distrito Federal(DF)</h3></ul>
+             <li>População: 2.974.703 hab</li>
+             <li>Capital: Não tem</li>
+            <li>Clima: Tropical</li>
+                                                
+             </section>
+            </div>
+
+            <div class="ms">
+                <section>
+                 <img class="ims" src="https://rotadeferias.com.br/wp-content/uploads/2019/04/24-9.jpg">
+                 <ul><h3>Mato Grosso do Sul(MS)</h3></ul>
+                 <li>População: 2.748.023 hab</li>
+                 <li>Capital: Campo Grande</li>
+                <li>Clima: Tropical</li>
+                                                    
+                 </section>
+                </div>
+
+            <div class="es">
+                <section>
+                 <img class="ies" src="https://rotadeferias.com.br/wp-content/uploads/2019/04/15-10.jpg">
+                 <ul><h3>Espírito Santo(ES)</h3></ul>
+                 <li>População: 4.016.356 hab</li>
+                 <li>Capital: Vitória</li>
+                <li>Clima: Tropical</li>
+                                                    
+                 </section>
+                </div>
+
+                <div class="mg">
+                    <section>
+                     <img class="img" src="https://www.minasgerais.com.br/arquivos/uploads/1597757532VKSTeJupCd.png">
+                     <ul><h3>Minas Gerais(MG)</h3></ul>
+                     <li>População: 21.119.536 hab</li>
+                     <li>Capital: Belo Horizonte</li>
+                    <li>Clima: Tropical</li>
+                                                        
+                     </section>
+                    </div>
+
+                    <div class="rj">
+                        <section>
+                         <img class="irj" src="https://rotadeferias.com.br/wp-content/uploads/2019/04/37-7.jpg">
+                         <ul><h3>Rio de Janeiro(RJ)</h3></ul>
+                         <li>População: 16.718.956 hab</li>
+                         <li>Capital: Rio de Janeiro</li>
+                        <li>Clima: Tropical</li>
+                                                            
+                         </section>
+                        </div>
+
+                        <div class="sp">
+                            <section>
+                             <img class="isp" src="https://rotadeferias.com.br/wp-content/uploads/2019/04/50-4.jpg">
+                             <ul><h3>São Paulo(SP)</h3></ul>
+                             <li>População: 45.538.936 hab</li>
+                             <li>Capital: São Paulo</li>
+                            <li>Clima: Tropical</li>
+                                                                
+                             </section>
+                            </div>
+
+                            <div class="sc">
+                                <section>
+                                 <img class="isc" src="https://rotadeferias.com.br/wp-content/uploads/2019/04/47-5.jpg">
+                                 <ul><h3>Santa Catarina(SC)</h3></ul>
+                                 <li>População: 6.910.553 hab</li>
+                                 <li>Capital: Florianópolis</li>
+                                <li>Clima: Subtropical</li>
+                                                                    
+                                 </section>
+                                </div>
+
+                                <div class="pr">
+                                    <section>
+                                     <img class="ipr" src="https://rotadeferias.com.br/wp-content/uploads/2019/04/31-9.jpg">
+                                     <ul><h3>Paraná(PR)</h3></ul>
+                                     <li>População: 11.348.937 hab</li>
+                                     <li>Capital: Curitiba</li>
+                                    <li>Clima: Subtropical</li>
+                                                                        
+                                     </section>
+                                    </div>
+
+                                    <div class="rs">
+                                        <section>
+                                         <img class="irs" src="https://rotadeferias.com.br/wp-content/uploads/2019/04/41-6.jpg">
+                                         <ul><h3>Rio Grande do Sul(RS)</h3></ul>
+                                         <li>População: 11.329.605 hab</li>
+                                         <li>Capital: 11.329.605 hab</li>
+                                        <li>Clima: Subtropical</li>
+                                                                            
+                                         </section>
+                                        </div>
+
+                                        <div class="go">
+                                            <section>
+                                             <img class="igo" src="https://rotadeferias.com.br/wp-content/uploads/2019/04/18-10.jpg">
+                                             <ul><h3>Goiás(GO)</h3></ul>
+                                             <li>População: 6.921.161 hab</li>
+                                             <li>Capital: Goiânia</li>
+                                            <li>Clima: Tropical</li>
+                                                                                
+                                             </section>
+                                            </div>
+
+                                            <div class="mt">
+                                                <section>
+                                                 <img class="imt" src="https://rotadeferias.com.br/wp-content/uploads/2019/04/21-9.jpg">
+                                                 <ul><h3>Mato Grosso(MT)</h3></ul>
+                                                 <li>População: 3.441.998 hab</li>
+                                                 <li>Capital: Cuiabá</li>
+                                                <li>Clima: Tropical</li>
+                                                                                    
+                                                 </section>
+                                                </div>
+                                                                                                             
+</body>
+</html>
